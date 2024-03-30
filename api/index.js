@@ -5,7 +5,7 @@ dotenv.config();
 // mongoose.connect("mongodb+srv://kunjilal976:meena@976@mern-project.urlr4z2.mongodb.net/?retryWrites=true&w=majority&appName=mern-project")
 mongoose.connect(process.env.MONGO)
 .then(()=>{
-    console.log("'connected to mongoDB");
+    console.log("connected to mongoDB");
 })
 .catch((err)=>{
     console.log(err);
