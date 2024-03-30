@@ -5,3 +5,5 @@ export default function App() {
     <div className='text-red-300'>App</div>
   )
 }
+
+//hello world
