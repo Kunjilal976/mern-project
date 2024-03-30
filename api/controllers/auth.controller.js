@@ -13,3 +13,4 @@ import bcryptjs from 'bcryptjs';
         res.status(500).json(error.message);
     }  
 };
+
