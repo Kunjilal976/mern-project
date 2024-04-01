@@ -14,7 +14,11 @@ email:{
 password:{
     type:String,
     required:true,
-}
+},
+avatar:{
+    type:String,
+  default:"https://cdn-icons-png.flaticon.com/512/5556/5556468.png ",
+},
 },{timestamps:true});
 
 const User=mongoose.model('User',userSchema);
