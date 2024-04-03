@@ -248,8 +248,6 @@ export default function CreateListing() {
                     </div>
                 </div>
 
-
-
                 <div className='flex flex-col flex-1 gap-4'>
                     <p className='font-semibold text-red-500'>Images:
                         <span className='font-normal text-gray-300 ml-2'>
