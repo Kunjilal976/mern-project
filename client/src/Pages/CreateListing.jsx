@@ -15,6 +15,7 @@ export default function CreateListing() {
 
     const { currentUser } = useSelector((state) => state.user);
     const navigate = useNavigate();
+    
 
     const [files, setFiles] = useState([]);
     // console.log(files)
