@@ -230,8 +230,8 @@ export default function UpdateListing() {
                             <span>CCTV </span>
                         </div>
                         <div className='flex gap-2'>
-                            <input type='checkbox' id='geyser' className='w-5' onChange={handleChange} checked={formData.geyser} />
-                            <span>Geyser </span>
+                            <input type='checkbox' id='offer' className='w-5' onChange={handleChange} checked={formData.geyser} />
+                            <span>Offer </span>
                         </div>
                         <div className='flex gap-2'>
                             <input type='checkbox' id='privateBathroom' className='w-5' onChange={handleChange} checked={formData.privateBathroom} />

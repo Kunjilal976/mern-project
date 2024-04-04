@@ -216,8 +216,8 @@ export default function CreateListing() {
                             <span>CCTV </span>
                         </div>
                         <div className='flex gap-2'>
-                            <input type='checkbox' id='geyser' className='w-5' onChange={handleChange} checked={formData.geyser} />
-                            <span>Geyser </span>
+                            <input type='checkbox' id='offer' className='w-5' onChange={handleChange} checked={formData.geyser} />
+                            <span>Offer </span>
                         </div>
                         <div className='flex gap-2'>
                             <input type='checkbox' id='privateBathroom' className='w-5' onChange={handleChange} checked={formData.privateBathroom} />
@@ -236,15 +236,17 @@ export default function CreateListing() {
                             <input type='number' id='regularPrice' required onChange={handleChange} value={formData.regularPrice} className='p-3 border text-black border-gray-300 rounded-lg' />
                             <div className='flex flex-col items-center'>
                                 <p>Regular price</p>
+                                {formData.type==='rent' && (
                                 <span className='text-xs'>(Rs. / month)</span>
-                            </div>
+                                )}</div>
                         </div>
                         <div className='flex items-center gap-2'>
                             <input type='number' id='discountPrice' required onChange={handleChange} value={formData.discountPrice} className='p-3 border text-black border-gray-300 rounded-lg' />
                             <div className='flex flex-col items-center'>
                                 <p>Discounted price</p>
+                                {formData.type==='rent' &&(
                                 <span className='text-xs'>(Rs. / month)</span>
-                            </div>
+                            )}</div>
                         </div>
                     </div>
                 </div>
