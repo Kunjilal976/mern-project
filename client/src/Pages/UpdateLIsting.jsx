@@ -229,10 +229,7 @@ export default function UpdateListing() {
                             <input type='checkbox' id='cctv' className='w-5' onChange={handleChange} checked={formData.cctv} />
                             <span>CCTV </span>
                         </div>
-                        <div className='flex gap-2'>
-                            <input type='checkbox' id='offer' className='w-5' onChange={handleChange} checked={formData.geyser} />
-                            <span>Offer </span>
-                        </div>
+    
                         <div className='flex gap-2'>
                             <input type='checkbox' id='privateBathroom' className='w-5' onChange={handleChange} checked={formData.privateBathroom} />
                             <span>Private Bathroom </span>
@@ -292,7 +289,7 @@ export default function UpdateListing() {
                             </div>
                         ))}
                     <button disabled={loading || uploading} className='p-3 bg-green-700 text-white rounded-lg uppercase hover:opacity-85 disabled:opacity-75'>
-                        {loading ? 'Creating...' : "Update Listing"}
+                        {loading ? 'Updating...' : "Update Listing"}
                     </button>
                     {error && <p className='text-red-700 text-sm'>{error}</p>}
                 </div>
